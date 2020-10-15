@@ -1,0 +1,17 @@
+integer: null
+checkboxes: test-3
+checkboxes_inline: test-1
+radio: test-3
+radio_inline: test-4
+select: test-3
+text: null
+textarea: null
+skinny: null
+skinny_1: null
+skinny_2: null
+skinny_3: null
+mid: null
+mid_1: null
+mid_2: null
+half: null
+half_1: null

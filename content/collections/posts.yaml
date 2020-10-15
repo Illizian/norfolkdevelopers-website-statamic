@@ -1,0 +1,13 @@
+title: Posts
+template: posts/show
+layout: layout
+mount: c698bc05-023e-441d-8d6f-5ecf7605d515
+taxonomies:
+  - tags
+revisions: false
+route: '{mount}/{slug}'
+date: true
+sort_dir: desc
+date_behavior:
+  past: public
+  future: unlisted

@@ -1,0 +1,60 @@
+title: Posts
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: hero
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Hero
+          type: assets
+          listable: hidden
+      -
+        import: bard
+      -
+        handle: author
+        field:
+          mode: default
+          collections:
+            - authors
+          display: Author
+          type: entries
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required

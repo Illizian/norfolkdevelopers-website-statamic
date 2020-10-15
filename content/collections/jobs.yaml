@@ -1,0 +1,14 @@
+title: Jobs
+template: jobs/show
+layout: layout
+taxonomies:
+  - roles
+  - locations
+revisions: false
+mount: 51b920be-fea6-4cf8-836b-1b2892628c9e
+route: '{mount}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

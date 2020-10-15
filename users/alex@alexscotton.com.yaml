@@ -1,0 +1,8 @@
+name: Alex
+super: true
+id: 2dc6e6d1-dce3-4670-9db2-9eda6a69c108
+password_hash: $2y$10$r8ccoUiCTMhIg1iU4pAmXOtQwMl/r8F0LzxhycHExrOGdUincQkU2
+preferences:
+  collections:
+    author:
+      after_save: create_another

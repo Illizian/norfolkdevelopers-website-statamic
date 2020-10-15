@@ -1,0 +1,15 @@
+<header class="mb-12">
+    <h1 class="mb-1 text-4xl font-bold leading-tight md:text-5xl">
+        {{ title }}
+
+        <span class="text-gray-500">
+            ({{ partial:taxonomy.inline :tags="locations" }} / {{ salary }} / {{ seniority }})
+        </span>
+    </h1>
+
+    <div class="mb-4">
+        {{ partial:jobs.details :entry="page" }}
+    </div>
+</header>
+
+{{ partial:bard.index }}

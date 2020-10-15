@@ -1,0 +1,9 @@
+title: Magazines
+template: default
+layout: layout
+mount: f94578f4-14d8-495b-80ae-48410106cb7e
+revisions: false
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

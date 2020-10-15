@@ -1,0 +1,28 @@
+<div class="flex flex-col mb-6 py-4 rounded hover:border md:flex-row">
+    <div class="mr-6 w-full mb-1 md:mt-2 md:mb-0 md:w-2/12">
+        {{ glide :src="entry.thumbnail" width="520" }}
+            <img
+                src="{{ url }}"
+                width="{{ width }}"
+                height="{{ height }}"
+                alt="The front cover of {{ entry.title }}" />
+        {{ /glide }}
+    </div>
+    <div class="mt-4 md:mt-0 md:w-10/12">
+        <h3 class="text-2xl text-gray-300 font-bold tracking-tight">
+            {{ entry.title }}
+        </h3>
+
+        <p>
+            {{ entry.description | nl2br }}
+        </p>
+
+        <a
+            class="inline-block mt-4 p-2 text-green-700 bg-green-200 rounded font-bold hover:text-green-900 hover:bg-green-400"
+            href="{{ entry.download }}"
+            download
+        >
+            Download PDF
+        </a>
+    </div>
+</div>
